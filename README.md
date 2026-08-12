@@ -5,17 +5,15 @@
   <a href="#english"><img src="https://img.shields.io/badge/Language-English-blue?style=for-the-badge" alt="Switch to English"></a>
 </p>
 
-> GitHub README 不支持按浏览器语言自动切换内容；请使用上方按钮跳转至中文或英文说明。
-
 Design CBC experiments, estimate preferences, calculate willingness to pay, and simulate pricing — in Python.
 
-ConjointKit is a small, open-source Python toolkit for Choice-Based Conjoint (CBC) work. It replaces product-specific survey parsing with a clear configuration file and a standard long response format. Version 0.1 focuses on a correct, inspectable workflow: a balanced randomized design, Conditional Logit estimation, WTP, and simple scenario simulation.
+ConjointKit is a small, open-source Python toolkit for Choice-Based Conjoint (CBC) work. It replaces product-specific survey parsing with a clear configuration file and a standard long response format. The v0.1 workflow provides a clear, reproducible foundation for CBC research: a balanced randomized design, Conditional Logit estimation, WTP, and simple scenario simulation.
 
 ## 中文介绍
 
 ConjointKit 是一个用于 **选择型联合分析**（Choice-Based Conjoint，CBC）的开源 Python 工具包。它面向产品、市场和定价研究中常见的离散选择实验：研究者先定义产品属性与水平，再生成选择任务；收集到受访者在不同方案之间的选择后，便可估计偏好、计算支付意愿（WTP），并模拟价格或产品配置变化下的选择概率。
 
-v0.1 的目标不是堆叠复杂模型，而是提供一条清晰、可复现的基础研究路径：
+v0.1 的工作流程是提供一条清晰、可复现的基础研究路径：
 
 1. 用 YAML 或 Python 字典配置产品属性、水平、价格和任务数量；
 2. 生成 **平衡随机 CBC 设计**，并报告水平平衡、属性相关性、重复方案和支配关系等诊断信息；
