@@ -1,0 +1,24 @@
+product_name: AI Subscription
+attributes:
+  intelligence:
+    type: categorical
+    levels: [Basic, Advanced, Expert]
+    preference_direction: higher
+  context_window:
+    type: categorical
+    levels: [Standard, Extended, Long]
+    preference_direction: higher
+  privacy:
+    type: categorical
+    levels: [Default, Private]
+    preference_direction: higher
+  price:
+    type: price
+    levels: [20, 60, 130]
+    preference_direction: lower
+options:
+  include_none: true
+design:
+  num_tasks: 9
+  alternatives_per_task: 2
+  random_seed: 42
